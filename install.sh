@@ -40,14 +40,17 @@ if [ -d "$HOME/.config/kitty/" ]; then
 {
   mv $HOME/.config/kitty/ $path/backup
 }else
+{
   cp $path/kitty/ $HOME/.config/kitty/
+}
 fi
 
 if [ -d "$HOME/.config/picom/" ]; then
 {
   mv $HOME/.config/picom/ $path/backup
-}else
+}else{
   cp $path/picom/ $HOME/.config/picom/
+}
 fi
 
 mv $HOME/.bashrc $path/backup
